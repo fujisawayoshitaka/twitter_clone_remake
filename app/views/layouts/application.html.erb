@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>TwiClone</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>例コード</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <header class="header clearfix">
+      <a href="blogs">
+      <%= image_tag 'twitter_clone.png', class: 'logo_image' %>
+      </a>
+      <nav>
+        <ul class="top_menu clearfix">
+          <li><a href="blogs">ホーム</a></li>
+          <li><a href="#">事業内容</a></li>
+          <li><a href="#">会社概要</a></li>
+          <li><a href="#">お問い合せ</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <body>
-    <%= yield %>
-  </body>
+<%= yield %>
+
+  <footer class = "footer">
+    <p>twitter_clone</p>
+
+  </footer>
+
+</body>
 </html>

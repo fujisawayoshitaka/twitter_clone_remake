@@ -1,8 +1,9 @@
-<h1>呟き一覧</h1>
+<div class="content">
+
 
 <p><%= notice %></p>
 
-  <article class="content">
+  <article>
     <% @blogs.each do |blog| %>
       <table>
       <tr>
@@ -17,3 +18,6 @@
     <%= link_to '新しくブログを投稿する', new_blog_path %>
 
   </article>
+
+
+</div>
